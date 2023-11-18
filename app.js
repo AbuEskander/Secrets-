@@ -96,7 +96,6 @@ app.get("/logout", (req, res) => {
             console.log(err);
         }
     });
-    res.redirect('/');
     res.redirect("/");
 });
 app.get("/auth/google",passport.authenticate("google",{scope:["profile"]}));
